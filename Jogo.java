@@ -31,7 +31,7 @@ public class Jogo{
     }
 
     public boolean checaJogo(){
-      if (checaLinhas()==true | checaColunas()==true | checaDiagonais()==true)
+      if (checaLinhas()==true | checaColunas()==true | checaDiagonais()==true | checaEmpate()==true)
         return (true);
       else
       return (false);
@@ -71,4 +71,18 @@ public class Jogo{
         }
         return (false);
       }
+
+  public boolean checaEmpate(){
+    int cont=0;
+    for (int i=0; i<(getTabuleiro().getTamanhoLinhas()); i++){
+        for (int j=0; j<(getTabuleiro().getTamanhoColunas()); j++){
+          if (tabuleiro.getPosicoes()[i][j].getSituacao()==true)
+            cont++;
+        }
+    }
+    if (cont==9)
+      return (true);
+    else
+      return (false);
   }
+}

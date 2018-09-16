@@ -36,5 +36,6 @@ public class Tabuleiro{
     System.out.println("     |   |   ");
     System.out.println("2  "+posicoes[2][0].getSimbolo()+" | "+posicoes[2][1].getSimbolo()+" | "+posicoes[2][2].getSimbolo());
     System.out.println("     |   |   ");
+    System.out.println("\n");
   }
 }
