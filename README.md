@@ -1,2 +1,2 @@
 # Jogo-Da-Velha-Java
-Jogo da velha usando Java e conceitos de orientada a objetos.
+Tic-Tac-Toe using Oriented Programming Object concepts.
